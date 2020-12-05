@@ -3,44 +3,45 @@
 <html lang="es-cl">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Prueba 1">
+    <meta name="description" content="Prueba 2 y 3">
     <meta name="author" content="Kato,Niko; Ale">
     <meta name="keywords" content="html, style"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{% static 'core/Imagenes/Hamburger.png' %}" type="images/png">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <!-- CSS Font -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:300,400,500">
     <!-- CSS -->
-    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'core/Css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'core/Css/bootstrap.css' %}">
+     <link rel="stylesheet" href="{% static 'core/Css/fonts.css' %}">
+
 
     <title>Burger</title>
 </head>
 <body>
 
-    <div class="page"><a class="section section-banner d-none d-xl-block" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" style="background-image: url(images/banner/background-04-1920x60.jpg); background-image: -webkit-image-set( url(images/banner/background-04-1920x60.jpg) 1x, url(images/banner/background-04-3840x120.jpg) 2x )"><img src="images/banner/foreground-04-1600x60.png" srcset="images/banner/foreground-04-1600x60.png 1x, images/banner/foreground-04-3200x120.png 2x" alt="" width="1600" height="310"></a>
-    <!-- Page Header-->
-    <header class="section page-header">
+    <div class="page"><a class="section section-banner d-none d-xl-block" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" style="background-image: url(images/banner/background-04-1920x60.jpg); background-image: -webkit-image-set( url(images/banner/background-04-1920x60.jpg) 1x, url(images/banner/background-04-3840x120.jpg) 2x )"><img src="{% static 'core/Imagenes/banner/foreground-04-1600x60.png' %}" srcset="images/banner/foreground-04-1600x60.png 1x, images/banner/foreground-04-3200x120.png 2x" alt="" width="1600" height="310"></a>
+      <!-- Page Header-->
+      <header class="section page-header">
         <!-- RD Navbar-->
         <div class="rd-navbar-wrap rd-navbar-modern-wrap">
-        <nav class="rd-navbar rd-navbar-modern" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="70px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          <nav class="rd-navbar rd-navbar-modern" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="70px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
             <div class="rd-navbar-main-outer">
-            <div class="rd-navbar-main">
+              <div class="rd-navbar-main">
                 <!-- RD Navbar Panel-->
                 <div class="rd-navbar-panel">
-                <!-- RD Navbar Toggle-->
-                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                <!-- RD Navbar Brand-->
-                <div class="rd-navbar-brand"><a class="brand" href="index.html"><img src="{% static 'core/Imagenes/logo-inverse-196x42.png' %}" alt="" width="196" height="42"/></a></div>
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a class="brand"><img src="{% static 'core/images/logo-default-196x47.png' %}" alt="" width="196" height="47"/></a></div>
                 </div>
                 <div class="rd-navbar-main-element">
-                <div class="rd-navbar-nav-wrap">
+                  <div class="rd-navbar-nav-wrap">
+
                     <!-- RD Navbar Nav-->
                     <ul class="navbar-nav">
                     <li class="nav-item">
@@ -62,60 +63,59 @@
                     </ul>
                 </div>
                 <div class="rd-navbar-project-hamburger" data-multitoggle=".rd-navbar-main" data-multitoggle-blur=".rd-navbar-wrap" data-multitoggle-isolate>
-                    <div class="project-hamburger"><span class="project-hamburger-arrow-top"></span><span class="project-hamburger-arrow-center"></span><span class="project-hamburger-arrow-bottom"></span></div>
-                    <div class="project-hamburger-2"><span class="project-hamburger-arrow"></span><span class="project-hamburger-arrow"></span><span class="project-hamburger-arrow"></span>
-                    </div>
-                    <div class="project-close"><span></span><span></span></div>
+                  <div class="project-hamburger"><span class="project-hamburger-arrow-top"></span><span class="project-hamburger-arrow-center"></span><span class="project-hamburger-arrow-bottom"></span></div>
+                  <div class="project-hamburger-2"><span class="project-hamburger-arrow"></span><span class="project-hamburger-arrow"></span><span class="project-hamburger-arrow"></span>
+                  </div>
+                  <div class="project-close"><span></span><span></span></div>
                 </div>
-                </div>
-                <div class="rd-navbar-project rd-navbar-modern-project">
+              </div>
+              <div class="rd-navbar-project rd-navbar-modern-project">
                 <div class="rd-navbar-project-modern-header">
-                    <h4 class="rd-navbar-project-modern-title">Get in Touch</h4>
-                    <div class="rd-navbar-project-hamburger" data-multitoggle=".rd-navbar-main" data-multitoggle-blur=".rd-navbar-wrap" data-multitoggle-isolate>
+                  <h4 class="rd-navbar-project-modern-title">Ponte en contacto</h4>
+                  <div class="rd-navbar-project-hamburger" data-multitoggle=".rd-navbar-main" data-multitoggle-blur=".rd-navbar-wrap" data-multitoggle-isolate>
                     <div class="project-close"><span></span><span></span></div>
-                    </div>
+                  </div>
                 </div>
                 <div class="rd-navbar-project-content rd-navbar-modern-project-content">
-                    <div>
-                    <p>We are always ready to provide you with fresh organic products for your home or office. Contact us to find out how we can help you.</p>
-                    <div class="heading-6 subtitle">Our Contacts</div>
+                  <div>
+                    <p>Nuestra empresa usa los mejores ingredientes para hacer la hamburguesa que más te gusta. Contactanos por si necesitas ayuda con algo.</p>
+                    <div class="heading-6 subtitle">Nuestros contactos</div>
                     <div class="row row-10 gutters-10">
-                        <div class="col-12"><img src="images/home-sidebar-394x255.jpg" alt="" width="394" height="255"/>
-                        </div>
+                      <div class="col-12"><img src="{% static 'core/Imagenes/home-sidebar-394x255.jpg' %}" alt="" width="394" height="255"/>
+                      </div>
                     </div>
                     <ul class="rd-navbar-modern-contacts">
-                        <li>
+                      <li>
                         <div class="unit unit-spacing-sm">
-                            <div class="unit-left"><span class="icon fa fa-phone"></span></div>
-                            <div class="unit-body"><a class="link-phone" href="tel:#">+1 323-913-4688</a></div>
+                          <div class="unit-left"><span class="icon fa fa-phone"></span></div>
+                          <div class="unit-body"><a class="link-phone" href="tel:#">+2 2307 6611</a></div>
                         </div>
-                        </li>
-                        <li>
+                      </li>
+                      <li>
                         <div class="unit unit-spacing-sm">
-                            <div class="unit-left"><span class="icon fa fa-location-arrow"></span></div>
-                            <div class="unit-body"><a class="link-location" href="#">4730 Crystal Springs Dr, Los Angeles, CA 90027</a></div>
+                          <div class="unit-left"><span class="icon fa fa-location-arrow"></span></div>
+                          <div class="unit-body"><a class="link-location" href="#">Av Libertador Bernardo O'Higgins, Santiago, Región Metropolitana</a></div>
                         </div>
-                        </li>
-                        <li>
+                      </li>
+                      <li>
                         <div class="unit unit-spacing-sm">
-                            <div class="unit-left"><span class="icon fa fa-envelope"></span></div>
-                            <div class="unit-body"><a class="link-email" href="mailto:#">mail@demolink.org</a></div>
+                          <div class="unit-left"><span class="icon fa fa-envelope"></span></div>
+                          <div class="unit-body"><a class="link-email" href="mailto:#">BurgerKing@burger.org</a></div>
                         </div>
-                        </li>
+                      </li>
                     </ul>
-                    <ul class="list-inline rd-navbar-modern-list-social">
-                        <li><a class="icon fa fa-facebook" href="#"></a></li>
-                        <li><a class="icon fa fa-twitter" href="#"></a></li>
-                        <li><a class="icon fa fa-instagram" href="#"></a></li>
 
                     </ul>
-                    </div>
+                  </div>
                 </div>
-                </div>
+              </div>
             </div>
-            </div>
+          </div>
         </nav>
-        </div>
+      </div>
+      <script src="{% static 'core/Javascript/Javascript.js' %}"></script>
+  </header>
+  <!-- Fin NAVBAR -->
     <!-- Fin NAVBAR -->
 
     <main class="container"> 
@@ -256,7 +256,7 @@
     <!-- Llamadas a script en fichero extero -->
     <script src="{% static 'core/Javascript/Javascript.js' %}"></script>
     <script src="{% static 'core/Javascript/core.min.js' %}"></script>
-    <script src="{% static 'core/Javascript/js/script.js' %}"></script>
+    <script src="{% static 'core/Javascript/script.js' %}"></script>
 </body>
 </html>
 

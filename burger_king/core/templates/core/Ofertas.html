@@ -2,48 +2,169 @@
 
 {%block content %}
     {% load static %}
-    <h3 class="display-4 text-center" style="color: orange;position:relative;  top: 50px; font-family: 'Fredoka One', cursive;">Promociones del mes de Octubre</h3>
-    <!-- Inicio CAROUSEL -->
-    <br><br><br>
-    <div class="container">        
-        <div class="row mt-2 mb-2">
-            <div class="col-md-12">
-                <div class="carousel slide" data-ride="carousel" id="carousel">
-                    <!-- Indicadores -->
-                    <ul class="carousel-indicators">
-                        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel1" data-slide-to="1"></li>
-                        <li data-target="#carousel1" data-slide-to="2"></li>
-                        <li data-target="#carousel1" data-slide-to="3"></li>
-                    </ul>
-                    <!-- Slideshow -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="{% static 'core/Imagenes/1.jpg' %}"  alt="Ofertas1" style="width: 100%">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="{% static 'core/Imagenes/Promo2.jpg' %}"  alt="Ofertas2" style="width: 100%">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="{% static 'core/Imagenes/3.jpg' %}"  alt="Ofertas3" style="width: 100%">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="{% static 'core/Imagenes/4.jpg' %}"  alt="Ofertas4" style="width: 100%">
-                        </div>
+
+      <!-- About us-->
+      <section class="section">
+        <div class="parallax-container" data-parallax-img="images/bg-parallax-2.jpg">
+          <div class="parallax-content section-xl context-dark bg-overlay-68">
+            <div class="container">
+              <div class="row row-lg row-50 justify-content-center border-classic border-classic-big">
+                <div class="col-sm-6 col-md-5 col-lg-3 wow fadeInLeft" data-wow-delay="0s">
+                  <div class="counter-creative">
+                    <div class="counter-creative-number"><span class="counter">12</span><span class="icon counter-creative-icon fl-bigmug-line-trophy55"></span>
                     </div>
-    
-                    <!-- Controles -->
-                    <a class="carousel-control-prev" href="#carousel" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
+                    <h6 class="counter-creative-title">Ventas</h6>
+                  </div>
                 </div>
+                <div class="col-sm-6 col-md-5 col-lg-3 wow fadeInLeft" data-wow-delay=".1s">
+                  <div class="counter-creative">
+                    <div class="counter-creative-number"><span class="counter">2</span><span class="symbol">k</span><span class="icon counter-creative-icon fl-bigmug-line-up104"></span>
+                    </div>
+                    <h6 class="counter-creative-title">locales</h6>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-3 wow fadeInLeft" data-wow-delay=".2s">
+                  <div class="counter-creative">
+                    <div class="counter-creative-number"><span class="counter">679</span><span class="icon counter-creative-icon fl-bigmug-line-sun81"></span>
+                    </div>
+                    <h6 class="counter-creative-title">Clientes Felices</h6>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-3 wow fadeInLeft" data-wow-delay=".3s">
+                  <div class="counter-creative">
+                    <div class="counter-creative-number"><span class="counter">103</span><span class="icon counter-creative-icon fl-bigmug-line-user143"></span>
+                    </div>
+                    <h6 class="counter-creative-title">Trabajadores</h6>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+
+      </section>
+      <!-- Improve your interior with deco-->
+      <section class="section section-md bg-default section-top-image">
+        <div class="container">
+          <div class="oh h2-title">
+            <h2 class="wow slideInUp" data-wow-delay="0s">Nuestra Galeria</h2>
+          </div>
+          <div class="row row-30" data-lightgallery="group">
+            <div class="col-sm-6 col-lg-4">
+              <div class="oh-desktop">
+                <!-- Thumbnail Classic-->
+                <article class="thumbnail thumbnail-mary thumbnail-sm wow slideInLeft" data-wow-delay="0s">
+                    <div class="thumbnail-mary-figure"><img src="{% static 'core/Imagenes/grid-gallery-1-370x303.jpg' %}" alt="" width="370" height="303"/>
+                    </div>
+                    <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'core/Imagenes/gallery-original-1-1200x800.jpg' %}" data-lightgallery="item"><img src="{% static 'core/Imagenes/grid-gallery-1-370x303.jpg' %}" alt="" width="370" height="303"/></a>
+                    <h4 class="thumbnail-mary-title"><a href="#">Whopper</a></h4>
+                    </div>
+                </article>
+                </div>
+                </div>
+            <div class="col-sm-6 col-lg-4">
+             <div class="oh-desktop">
+                <!-- Thumbnail Classic-->
+                <article class="thumbnail thumbnail-mary thumbnail-sm wow slideInUp" data-wow-delay=".1s">
+                  <div class="thumbnail-mary-figure"><img src="{% static 'core/Imagenes/grid-gallery-2-370x303.jpg' %}" alt="" width="370" height="303"/>
+                  </div>
+                  <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'core/Imagenes/gallery-original-2-1200x800.jpg' %}" data-lightgallery="item"><img src="{% static 'core/Imagenes/grid-gallery-2-370x303.jpg' %}" alt="" width="370" height="303"/></a>
+                    <h4 class="thumbnail-mary-title"><a href="#">Steakhouse</a></h4>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="oh-desktop">
+                <!-- Thumbnail Classic-->
+                <article class="thumbnail thumbnail-mary thumbnail-sm wow slideInRight" data-wow-delay=".0s">
+                  <div class="thumbnail-mary-figure"><img src="{% static 'core/Imagenes/grid-gallery-3-370x303.jpg' %}" alt="" width="370" height="303"/>
+                  </div>
+                  <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'core/Imagenes/gallery-original-3-800x1200.jpg' %}" data-lightgallery="item"><img src="{% static 'core/Imagenes/grid-gallery-3-370x303.jpg' %}" alt="" width="370" height="303"/></a>
+                    <h4 class="thumbnail-mary-title"><a href="#">CheeseBurger</a></h4>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="oh-desktop">
+                <!-- Thumbnail Classic-->
+                <article class="thumbnail thumbnail-mary thumbnail-sm wow slideInUp" data-wow-delay=".1s">
+                  <div class="thumbnail-mary-figure"><img src="{% static 'core/Imagenes/grid-gallery-4-370x303.jpg' %}" alt="" width="370" height="303"/>
+                  </div>
+                  <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'core/Imagenes/gallery-original-4-800x1200.jpg' %}" data-lightgallery="item"><img src="{% static 'core/Imagenes/grid-gallery-4-370x303.jpg' %}" alt="" width="370" height="303"/></a>
+                    <h4 class="thumbnail-mary-title"><a href="#">Snacks</a></h4>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="oh-desktop">
+                <!-- Thumbnail Classic-->
+                <article class="thumbnail thumbnail-mary thumbnail-sm wow slideInLeft" data-wow-delay="0s">
+                  <div class="thumbnail-mary-figure"><img src="{% static 'core/Imagenes/grid-gallery-5-370x303.jpg' %}" alt="" width="370" height="303"/>
+                  </div>
+                  <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'core/Imagenes/gallery-original-5-800x1200.jpg' %}" data-lightgallery="item"><img src="{% static 'core/Imagenes/grid-gallery-5-370x303.jpg' %}" alt="" width="370" height="303"/></a>
+                    <h4 class="thumbnail-mary-title"><a href="#">BurgerDobleQuesoTocino</a></h4>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="oh-desktop">
+                <!-- Thumbnail Classic-->
+                <article class="thumbnail thumbnail-mary thumbnail-sm wow slideInDown" data-wow-delay=".1s">
+                  <div class="thumbnail-mary-figure"><img src="{% static 'core/Imagenes/grid-gallery-6-370x303.jpg' %}" alt="" width="370" height="303"/>
+                  </div>
+                  <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'core/Imagenes/gallery-original-6-1200x800.jpg' %}" data-lightgallery="item"><img src="{% static 'core/Imagenes/grid-gallery-6-370x303.jpg' %}" alt="" width="370" height="303"/></a>
+                    <h4 class="thumbnail-mary-title"><a href="#">King Pollo Club</a></h4>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     <!-- Fin CAROUSEL -->
+    <!-- About us-->
+    <section class="section">
+        <div class="parallax-container" data-parallax-img="images/bg-parallax-2.jpg">
+          <div class="parallax-content section-xl context-dark bg-overlay-68">
+            <div class="container">
+              <div class="row row-lg row-50 justify-content-center border-classic border-classic-big">
+                <div class="col-sm-6 col-md-5 col-lg-3 wow fadeInLeft" data-wow-delay="0s">
+                  <div class="counter-creative">
+                    <div class="counter-creative-number"><span class="counter">12</span><span class="icon counter-creative-icon fl-bigmug-line-trophy55"></span>
+                    </div>
+                    <h6 class="counter-creative-title">Ventas</h6>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-3 wow fadeInLeft" data-wow-delay=".1s">
+                  <div class="counter-creative">
+                    <div class="counter-creative-number"><span class="counter">2</span><span class="symbol">k</span><span class="icon counter-creative-icon fl-bigmug-line-up104"></span>
+                    </div>
+                    <h6 class="counter-creative-title">locales</h6>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-3 wow fadeInLeft" data-wow-delay=".2s">
+                  <div class="counter-creative">
+                    <div class="counter-creative-number"><span class="counter">679</span><span class="icon counter-creative-icon fl-bigmug-line-sun81"></span>
+                    </div>
+                    <h6 class="counter-creative-title">Clientes Felices</h6>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-3 wow fadeInLeft" data-wow-delay=".3s">
+                  <div class="counter-creative">
+                    <div class="counter-creative-number"><span class="counter">103</span><span class="icon counter-creative-icon fl-bigmug-line-user143"></span>
+                    </div>
+                    <h6 class="counter-creative-title">Trabajadores</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     <!-- Calcular Divisas-->
     <div class="container">
         <div class="col-md-4 mt-1 mb-1"style="position:center; left: 350px;">
