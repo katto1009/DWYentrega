@@ -1,0 +1,93 @@
+{% extends 'core/base.html' %}
+
+{%block content %}
+    {% load static %}
+    <!-- Inicio CAROUSEL -->
+    <div class="container">        
+        <div class="row mt-2 mb-2">
+            <div class="col-md-12">
+                <div class="carousel slide" data-ride="carousel" id="carousel">
+                    <!-- Indicadores -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                    </ul>
+    
+                    <!-- Slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{% static 'core/Imagenes/Whooper.jpg' %}"  alt="Whooper" style="width: 100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static 'core/Imagenes/Descarga.jpg' %}"  alt="Descarga" style="width: 100%">
+                        </div>
+                    </div>
+    
+                    <!-- Controles -->
+                    <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin CAROUSEL -->
+    <h4 class="display-4 text-center" style="color: orange;font-family: 'Fredoka One', cursive; position:relative;  top: 50px;">Nuestros Productos Destacados</h4>
+
+    <!-- CARDS -->
+        <div class="container">
+            <div class="row mt-4 mb-4"style="position: relative;top: 100px;">
+                <div class="col-md-4 mt-1 mb-1">
+                    <div class="card">
+                        <div class="card-header">
+                            <img class="card-img-top" src="{% static 'core/Imagenes/HParrilla.jpg' %}" alt="Imagen" style="width: 100%">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Hamburguesas a la Parrilla</h4>
+                            <p class="card-text" id="detalleHP">El sándwich emblemático de BURGER, en donde el típico sabor de la carne a la parrilla se realza en la combinación de diferentes verduras.</p>
+                            <h5 style="color: blue">Desde $4.990</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-primary" href="Menu.html">Ver opciones</a>
+                        </div>
+  
+                    </div>
+                </div>
+                <div class="col-md-4 mt-1 mb-1">
+                    <div class="card">
+                        <div class="card-header">
+                            <img class="card-img-top" src="{% static 'core/Imagenes/HPollo.jpg' %}" alt="Imagen" style="width: 100%">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Hamburguesas de Pollo</h4>
+                            <p class="card-text">Crocante por fuera, suave en su interior. Sensación única combinada con verduras frescas, irresistible queso cheddar y crujiente bacon.</p>
+                            <h5 style="color: blue">Desde $3.990</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-primary" href="Menu.html">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-1 mb-1">
+                    <div class="card">
+                        <div class="card-header">
+                            <img class="card-img-top" src="{% static 'core/Imagenes/Snacks.jpg' %}" alt="Imagen" style="width: 100%">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Snacks</h4>
+                            <p class="card-text">Elige entre nuestras exquisitas papas, aritos de cebolla, nuggets, nuggests picantes y empanadas, este contenido es solo hasta agotar stock ¡¡qué esperas!!</p>
+                            <h5 style="color: blue">Ahora $1.000</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-primary" href="Menu.html">Ver opciones</a>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    <!-- FinCARDS -->
+
+{%endblock%}

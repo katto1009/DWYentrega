@@ -1,0 +1,50 @@
+{% extends 'core/base.html' %}
+
+{%block content %}
+    {% load static %}
+        <h3 class="display-4" style="position: relative; margin-top: 50px; text-align: center; font-family: 'Fredoka One', cursive; color: orange"> Lista de hamburguesas </h3>
+        <div class="row">
+        <table class="table table-bordered" style="position: relative;top: 60px;">
+            <thead class="text-center" style= "color:rgb(255, 166, 0);font-family: 'Fredoka One', cursive;">
+                <tr>
+                    <th>Hamburguesa </th>
+                    <th>Información</th>
+                    <th>Calorias</th>
+                </tr>
+            </thead>
+            <tbody style="color:gray; font-family: 'Chewy', cursive;">
+                <tr>
+                    <th>WHOPPER</th>
+                    <th>El sándwich emblemático de BURGER KING®, en donde el típico sabor de la carne a la parrilla se realza en la combinación de diferentes verduras.</th>
+                    <th>878</th>
+                </tr>
+                <tr>
+                    <th>Steakhouse</th>
+                    <th>¡Disfruta de gran sabor que te da una carne mucho más grande hecha a la parrilla! 100% carne de vacuno, acompañada de queso, cebollitas crujientes, vegetales frescos, salsa A1, mayonesa envueltos en un delicioso y crujiente pan.</th>
+                    <th>754</th>
+                </tr>
+                <tr>
+                    <th>KING DE POLLO CLUB</th>
+                    <th>Crocante por fuera, suave en su interior. Sensación única combinada con verduras frescas, irresistible queso cheddar y crujiente bacon.</th>
+                    <th>878</th>
+                </tr>
+                <tr>
+                    <th>CHEESEBURGER</th>
+                    <th>Medallón de carne 100% de res a la parrilla acompañada de pepinillos, ketchup, mostaza, queso y pan con semillas de sésamo.</th>
+                    <th>398</th>
+                </tr>
+                <tr>
+                    <th>HAMBURGUESA DOBLE QUESO TOCINO</th>
+                    <th>Una de nuestras clásicas y más pedidas, una doble hamburguesa, con doble queso y crujiente tocino que vas a querer volver a comer una y otra vez.</th>
+                    <th>780</th>
+                </tr>
+                <tr>
+                    <th>KING DE POLLO ITALIANO</th>
+                    <th>Carne de pollo crujiente apanado a la perfección en pan con semillas de sésamo, acompañado de frescos tomates, rica palta y mayonesa.</th>
+                    <th>578</th>
+                </tr>
+            </tbody>
+
+        </table>
+        </div>
+{%endblock%}

@@ -1,0 +1,41 @@
+{% extends 'core/base.html' %}
+
+{%block content %}
+    {% load static %}
+    <section class="section section-md bg-default">
+        <div class="container">
+          <div class="oh">
+            <h2 class="wow slideInUp" data-wow-delay="0s">Nuestro equipo</h2>
+          </div>
+          <div class="row row-30 justify-content-center">
+            <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInRight" data-wow-delay="0s">
+              <!-- Team Classic-->
+              <article class="team-classic"><a class="team-classic-figure" href="#"><img src="{% static 'core/Imagenes/team-1-370x406.jpg' %}" alt="" width="370" height="406"/></a>
+                <div class="team-classic-caption">
+                  <h5 class="team-classic-name"><a href="#">Alexander Cordova</a></h5>
+                  <p class="team-classic-status">Ingeniero en Informática</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInRight" data-wow-delay=".1s">
+              <!-- Team Classic-->
+              <article class="team-classic"><a class="team-classic-figure" href="#"><img src="{% static 'core/Imagenes/team-2-370x406.jpg' %}" alt="" width="370" height="406"/></a>
+                <div class="team-classic-caption">
+                  <h5 class="team-classic-name"><a href="#">Kattia Galaz</a></h5>
+                  <p class="team-classic-status">Ingeniera en Informática</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInRight" data-wow-delay=".2s">
+              <!-- Team Classic-->
+              <article class="team-classic"><a class="team-classic-figure" href="#"><img src="{% static 'core/Imagenes/team-3-370x406.jpg' %}" alt="" width="370" height="406"/></a>
+                <div class="team-classic-caption">
+                  <h5 class="team-classic-name"><a href="#">Nicolás Navarrete</a></h5>
+                  <p class="team-classic-status">Ingeniero en Informática</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+{%endblock%}
