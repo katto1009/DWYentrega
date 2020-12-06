@@ -6873,7 +6873,7 @@ html.tablet .ui-to-top {
 
 .rd-navbar {
 	display: none;
-	background: #424040;
+	background: #686868;
 }
 
 .rd-navbar-toggle {
@@ -6883,7 +6883,7 @@ html.tablet .ui-to-top {
 	height: 48px;
 	line-height: 48px;
 	cursor: pointer;
-	color: #e7e7e7;
+	color: #686868;
 	background-color: transparent;
 	border: none;
 	display: none;
@@ -6891,7 +6891,7 @@ html.tablet .ui-to-top {
 
 .rd-navbar-toggle span {
 	position: relative;
-	display: block;
+	display: inline-block;
 	margin: auto;
 	transition: .3s all ease;
 }
@@ -6911,7 +6911,7 @@ html.tablet .ui-to-top {
 .rd-navbar-toggle span:after, .rd-navbar-toggle span:before, .rd-navbar-toggle span {
 	width: 24px;
 	height: 3px;
-	background-color: #5a5a5a;
+	background-color: #686868;
 	backface-visibility: hidden;
 	border-radius: 0;
 }
@@ -6950,7 +6950,7 @@ html.tablet .ui-to-top {
 	height: 48px;
 	line-height: 48px;
 	cursor: pointer;
-	color: #5a5a5a;
+	color: #686868;
 	display: none;
 }
 
@@ -6999,7 +6999,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-brand a {
-	display: block;
+	display: inline-block;
 }
 
 .rd-navbar-search {
@@ -7013,7 +7013,7 @@ html.tablet .ui-to-top {
 	padding-right: 50px;
 	font-size: 16px;
 	letter-spacing: 0;
-	color: #e6e7e6;
+	color: #686868;
 }
 
 .rd-navbar-search .form-input {
@@ -7024,7 +7024,7 @@ html.tablet .ui-to-top {
 	letter-spacing: 0;
 	border: none;
 	border-radius: 30px;
-	background: #ffffff;
+	background: #686868;
 	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -7041,12 +7041,12 @@ html.tablet .ui-to-top {
 	border: none;
 	cursor: pointer;
 	background-color: transparent;
-	color: #151515;
+	color: #686868;
 	transition: .33s;
 }
 
 .rd-navbar-search .rd-search-form-submit:hover {
-	color: #3c6a36;
+	color: #000000;
 }
 
 .rd-navbar-search-toggle {
@@ -7073,7 +7073,7 @@ html.tablet .ui-to-top {
 * @subsection  RD Navbar Static
 */
 .rd-navbar-static {
-	display: block;
+	display: inline;
 }
 
 .rd-navbar-static .rd-nav-item {
@@ -7081,21 +7081,21 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-static .rd-nav-item.focus .rd-nav-link, .rd-navbar-static .rd-nav-item.opened .rd-nav-link {
-	color: #151515;
+	color: #686868;
 	background: transparent;
 }
 
 .rd-navbar-static .rd-nav-item.focus > .rd-navbar-submenu-toggle, .rd-navbar-static .rd-nav-item.opened > .rd-navbar-submenu-toggle {
-	color: #151515;
+	color: #686868;
 }
 
 .rd-navbar-static .rd-nav-item.active .rd-nav-link {
-	color: #151515;
+	color: #686868;
 	background: transparent;
 }
 
 .rd-navbar-static .rd-nav-item.active > .rd-navbar-submenu-toggle {
-	color: #151515;
+	color: #686868;
 }
 
 .rd-navbar-static .rd-nav-item.focus > .rd-navbar-submenu-toggle::before,
@@ -7120,7 +7120,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-static .rd-nav-item > .rd-navbar-submenu-toggle:hover {
-	color: #151515;
+	color: #686868;
 }
 
 .rd-navbar-static .rd-nav-item > .rd-navbar-submenu {
@@ -7143,7 +7143,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-static .rd-nav-link:hover {
-	color: #151515;
+	color: #686868;
 }
 
 .rd-navbar-static .rd-menu {
@@ -7163,7 +7163,7 @@ html.tablet .ui-to-top {
 	left: 0;
 	padding: 22px 15px 22px 34px;
 	width: 270px;
-	background: #ffffff;
+	background:#686868;
 	z-index: 5;
 }
 
@@ -7193,11 +7193,11 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-static .rd-dropdown-link {
-	color: #151515;
+	color: #686868;
 }
 
 .rd-navbar-static .rd-dropdown-link:hover {
-	color: #151515;
+	color: #686868;
 }
 
 .rd-navbar-static .rd-navbar-dropdown li > a,
@@ -7214,12 +7214,12 @@ html.tablet .ui-to-top {
 .rd-navbar-static .rd-megamenu-list li > a,
 .rd-navbar-static .rd-megamenu-list li > a:focus,
 .rd-navbar-static .rd-megamenu-list li > a:active {
-	color: #151515;
+	color:#686868;
 }
 
 .rd-navbar-static .rd-navbar-dropdown li > a:hover,
 .rd-navbar-static .rd-megamenu-list li > a:hover {
-	color: #151515;
+	color:#686868;
 }
 
 .rd-navbar-static .rd-navbar-dropdown li > a::before,
@@ -7228,7 +7228,7 @@ html.tablet .ui-to-top {
 	position: relative;
 	content: '';
 	top: 0;
-	left: 0;
+	left: 9px;
 	width: 3px;
 	height: 26px;
 	font-size: 0;
@@ -7342,7 +7342,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-static .rd-megamenu-list-link:hover {
-	color: #3c6a36;
+	color: #ffffff;
 	background: transparent;
 }
 

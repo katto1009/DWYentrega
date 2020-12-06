@@ -15,14 +15,22 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from core import views
+from core import views as core_views
+from Menu import views as Menu_views
+
+from django.conf import Settings, settings
 
 urlpatterns = [
-    path('',views.index,name='index'),
-    path('acercade/',views.acercade,name='acercade'),
-    path('contacto/',views.contacto,name='contacto'),
-    path('ofertas/',views.ofertas,name='ofertas'),
-    path('menu/',views.menu,name='menu'),
+    path('',core_views.index,name='index'),
+    path('acercade/',core_views.acercade,name='acercade'),
+    path('contacto/',core_views.contacto,name='contacto'),
+    path('ofertas/',core_views.ofertas,name='ofertas'),
+    path('menu/',Menu_views.menu,name='menu'),
     path('admin/', admin.site.urls),
     
 ]
+
+if settings.DEBUG:
+    from django.conf.urls.static import static 
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    

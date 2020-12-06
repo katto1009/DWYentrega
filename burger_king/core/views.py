@@ -13,5 +13,3 @@ def contacto(request):
 def ofertas(request):
     return render(request,"core/Ofertas.html")
 
-def menu(request):
-    return render(request,"core/Menu.html")

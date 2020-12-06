@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}
+
+{%block content %}
+    {% for proyecto in projects %}
+          <!-- CARDS -->
+          <div class="container">
+            <div class="row mt-4 mb-4"style="position: relative;top: 100px;">
+                <div class="col-md-4 mt-1 mb-1">
+                    <div class="card">
+                        <div class="card-header">
+                            <img class="card-img-top" src="{{proyecto.image.url}}" alt="Imagen" style="width: 100%">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">{{proyecto.title}}</h4>
+                            <p class="card-text" id="detalleHP">{{proyecto.description}}</p>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+    {% endfor %}
+
+{%endblock%}
