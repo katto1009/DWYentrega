@@ -99,8 +99,9 @@ html p a:hover {
 * Typography
 */
 body {
+	margin:0;
 	font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	font-size: 40px;
+	font-size: 14px;
 	line-height: 1.71429;
 	font-weight: 400;
 	letter-spacing: 0;
@@ -1255,7 +1256,6 @@ p + .list-custom {
 	.list-custom-2 {
 		columns: 2;
 		break-inside: avoid;
-
 	}
 }
 
@@ -6873,7 +6873,7 @@ html.tablet .ui-to-top {
 
 .rd-navbar {
 	display: none;
-	background: #686868;
+	background: #ffffff;
 }
 
 .rd-navbar-toggle {
@@ -6883,7 +6883,7 @@ html.tablet .ui-to-top {
 	height: 48px;
 	line-height: 48px;
 	cursor: pointer;
-	color: #686868;
+	color: #151515;
 	background-color: transparent;
 	border: none;
 	display: none;
@@ -6891,7 +6891,7 @@ html.tablet .ui-to-top {
 
 .rd-navbar-toggle span {
 	position: relative;
-	display: inline-block;
+	display: block;
 	margin: auto;
 	transition: .3s all ease;
 }
@@ -6911,7 +6911,7 @@ html.tablet .ui-to-top {
 .rd-navbar-toggle span:after, .rd-navbar-toggle span:before, .rd-navbar-toggle span {
 	width: 24px;
 	height: 3px;
-	background-color: #686868;
+	background-color: #151515;
 	backface-visibility: hidden;
 	border-radius: 0;
 }
@@ -6950,7 +6950,7 @@ html.tablet .ui-to-top {
 	height: 48px;
 	line-height: 48px;
 	cursor: pointer;
-	color: #686868;
+	color: #151515;
 	display: none;
 }
 
@@ -6965,7 +6965,7 @@ html.tablet .ui-to-top {
 	height: 6px;
 	line-height: 6px;
 	text-align: center;
-	background: 5a5a5a;
+	background: #151515;
 	left: 50%;
 	margin-left: -3px;
 	border-radius: 50%;
@@ -6999,7 +6999,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-brand a {
-	display: inline-block;
+	display: block;
 }
 
 .rd-navbar-search {
@@ -7013,7 +7013,7 @@ html.tablet .ui-to-top {
 	padding-right: 50px;
 	font-size: 16px;
 	letter-spacing: 0;
-	color: #686868;
+	color: #3c6a36;
 }
 
 .rd-navbar-search .form-input {
@@ -7024,7 +7024,7 @@ html.tablet .ui-to-top {
 	letter-spacing: 0;
 	border: none;
 	border-radius: 30px;
-	background: #686868;
+	background: #ffffff;
 	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -7041,12 +7041,12 @@ html.tablet .ui-to-top {
 	border: none;
 	cursor: pointer;
 	background-color: transparent;
-	color: #686868;
+	color: #151515;
 	transition: .33s;
 }
 
 .rd-navbar-search .rd-search-form-submit:hover {
-	color: #000000;
+	color: #3c6a36;
 }
 
 .rd-navbar-search-toggle {
@@ -7073,7 +7073,7 @@ html.tablet .ui-to-top {
 * @subsection  RD Navbar Static
 */
 .rd-navbar-static {
-	display: inline;
+	display: block;
 }
 
 .rd-navbar-static .rd-nav-item {
@@ -7081,21 +7081,21 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-static .rd-nav-item.focus .rd-nav-link, .rd-navbar-static .rd-nav-item.opened .rd-nav-link {
-	color: #686868;
+	color: #151515;
 	background: transparent;
 }
 
 .rd-navbar-static .rd-nav-item.focus > .rd-navbar-submenu-toggle, .rd-navbar-static .rd-nav-item.opened > .rd-navbar-submenu-toggle {
-	color: #686868;
+	color: #151515;
 }
 
 .rd-navbar-static .rd-nav-item.active .rd-nav-link {
-	color: #686868;
+	color: #151515;
 	background: transparent;
 }
 
 .rd-navbar-static .rd-nav-item.active > .rd-navbar-submenu-toggle {
-	color: #686868;
+	color: #151515;
 }
 
 .rd-navbar-static .rd-nav-item.focus > .rd-navbar-submenu-toggle::before,
@@ -7120,7 +7120,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-static .rd-nav-item > .rd-navbar-submenu-toggle:hover {
-	color: #686868;
+	color: #151515;
 }
 
 .rd-navbar-static .rd-nav-item > .rd-navbar-submenu {
@@ -7143,7 +7143,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-static .rd-nav-link:hover {
-	color: #686868;
+	color: #151515;
 }
 
 .rd-navbar-static .rd-menu {
@@ -7163,7 +7163,7 @@ html.tablet .ui-to-top {
 	left: 0;
 	padding: 22px 15px 22px 34px;
 	width: 270px;
-	background:#686868;
+	background: #ffffff;
 	z-index: 5;
 }
 
@@ -7193,11 +7193,11 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-static .rd-dropdown-link {
-	color: #686868;
+	color: #151515;
 }
 
 .rd-navbar-static .rd-dropdown-link:hover {
-	color: #686868;
+	color: #151515;
 }
 
 .rd-navbar-static .rd-navbar-dropdown li > a,
@@ -7214,12 +7214,12 @@ html.tablet .ui-to-top {
 .rd-navbar-static .rd-megamenu-list li > a,
 .rd-navbar-static .rd-megamenu-list li > a:focus,
 .rd-navbar-static .rd-megamenu-list li > a:active {
-	color:#686868;
+	color: #151515;
 }
 
 .rd-navbar-static .rd-navbar-dropdown li > a:hover,
 .rd-navbar-static .rd-megamenu-list li > a:hover {
-	color:#686868;
+	color: #151515;
 }
 
 .rd-navbar-static .rd-navbar-dropdown li > a::before,
@@ -7228,7 +7228,7 @@ html.tablet .ui-to-top {
 	position: relative;
 	content: '';
 	top: 0;
-	left: 9px;
+	left: 0;
 	width: 3px;
 	height: 26px;
 	font-size: 0;
@@ -7342,7 +7342,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-static .rd-megamenu-list-link:hover {
-	color: #ffffff;
+	color: #3c6a36;
 	background: transparent;
 }
 
@@ -7979,7 +7979,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-fixed .rd-navbar-nav-wrap {
-	position: fixed;
+	position: inline-block;
 	left: 0;
 	top: -56px;
 	bottom: -56px;
@@ -8016,7 +8016,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-fixed .rd-navbar-nav {
-	display: block;
+	display: inline-block;
 	padding-top: 20px;
 	margin: 30px 0 20px;
 	height: auto;
@@ -8033,7 +8033,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-fixed .rd-nav-link {
-	display: block;
+	display: inline-block;
 	padding: 9px 56px 9px 18px;
 }
 
@@ -8083,14 +8083,14 @@ html.tablet .ui-to-top {
 
 .rd-navbar-fixed .rd-navbar-submenu.opened > .rd-navbar-dropdown,
 .rd-navbar-fixed .rd-navbar-submenu.opened > .rd-navbar-megamenu {
-	display: block;
+	display: inline-block;
 }
 
 .rd-navbar-fixed .rd-megamenu-list > li > a,
 .rd-navbar-fixed .rd-navbar-dropdown > li > a {
-	display: block;
+	display: inline-block;
 	padding: 9px 56px 9px 16px;
-	font-size: 12px;
+	font-size: 15px;
 	line-height: 1.5;
 }
 
@@ -8105,7 +8105,7 @@ html.tablet .ui-to-top {
 
 .rd-navbar-fixed .rd-navbar-megamenu .rd-megamenu-title {
 	position: relative;
-	display: block;
+	display: inline-block;
 	padding: 0 18px 7px;
 	font-size: 18px;
 	line-height: 1.5;
@@ -8153,7 +8153,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-fixed .rd-navbar-collapse-toggle {
-	display: block;
+	display: inline-block;
 	top: 4px;
 	z-index: 1031;
 }
@@ -8187,7 +8187,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-fixed .rd-navbar-search {
-	display: block;
+	display: inline-block;
 	width: calc(100% - 30px);
 	margin-left: auto;
 	margin-right: auto;
@@ -8453,7 +8453,7 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .rd-navbar-modern.rd-navbar-static .rd-navbar-nav-wrap {
-	display: flex;
+	display: inline-block;
 	align-items: center;
 	margin-right: 16px;
 	transition: all .3s ease;
@@ -9135,7 +9135,6 @@ html.rd-navbar-fixed-linked .page {
 .swiper-wp8-vertical {
 	touch-action: pan-x;
 }
-
 
 
 .swiper-container-fade.swiper-container-free-mode .swiper-slide {
@@ -10556,7 +10555,6 @@ h1 + .tabs-line {
 .owl-carousel .owl-stage-outer {
 	position: relative;
 	overflow: hidden;
-	/* fix for flashing background */
 }
 
 .owl-carousel .owl-controls .owl-nav .owl-prev,

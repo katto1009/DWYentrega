@@ -10,6 +10,5 @@ def acercade(request):
 def contacto(request):
     return render(request,"core/Contacto.html")
     
-def ofertas(request):
-    return render(request,"core/Ofertas.html")
+
 

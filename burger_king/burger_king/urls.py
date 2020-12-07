@@ -24,7 +24,6 @@ urlpatterns = [
     path('',core_views.index,name='index'),
     path('acercade/',core_views.acercade,name='acercade'),
     path('contacto/',core_views.contacto,name='contacto'),
-    path('ofertas/',core_views.ofertas,name='ofertas'),
     path('menu/',Menu_views.menu,name='menu'),
     path('admin/', admin.site.urls),
     

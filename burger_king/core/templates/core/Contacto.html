@@ -1,14 +1,15 @@
 {% extends 'core/base.html' %}
 
 {%block content %}
-        <h3 class="display-4 text-center">Formulario Contacto</h3>
+        <h3 class="display-3 text-center">Formulario Contacto</h3>
         <br>
         <br>
         <br>
         <!-- Contenedor Principal FORMULARIO -->
-        <main class="container mt-4 mb-4">
-            <div class="row mt-4 mb-4">
-                <div class="col-md-6 order-1">
+        
+            <div class="container">
+                <div class="col-md-4 mt-1 mb-1"style="position:center; left: 350px;">
+
                     <form action="#"  method="GET" id="mi_formulario">
                         <!-- Armar formulario con FORM GROUP -->
                         <div class="form-group">
@@ -82,5 +83,28 @@
                 </div>
             </div>
         </main>
+
         <!-- Fin MAIN -->
+        
+        
+ 
+
+                <!-- Calcular Divisas-->
+                <div class="container">
+                    <div class="col-md-4 mt-1 mb-1"style="position:center; left: 350px;">
+                        <div class="card-header">
+                            <h2 class="card-title">Conversor Divisas</h2>
+                        </div>
+                        <div class="card-body">
+                            <input type="number" class="form-control" id="num1" name="num1" placeholder="Ingresa valor CLP">
+                            <br>
+                            <p class="card-text" id="resultado"></p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-info" onclick="convertir()">Convertir a USD</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 {%endblock%}
