@@ -1,88 +1,44 @@
 {% extends 'core/base.html' %}
 
 {%block content %}
-        <h3 class="display-3 text-center">Formulario Contacto</h3>
-        <br>
-        <br>
-        <br>
-        <!-- Contenedor Principal FORMULARIO -->
-        
-            <div class="container">
-                <div class="col-md-4 mt-1 mb-1"style="position:center; left: 350px;">
-
-                    <form action="#"  method="GET" id="mi_formulario">
-                        <!-- Armar formulario con FORM GROUP -->
-                        <div class="form-group">
-                            <label class="font-weight-bold" for="rut">Rut</label>
-                            <input class="form-control" type="text" id="rut" name="rut" placeholder="Sin guión. Ej. 123456789 " required>
-                        </div>
-                        <div class="form-group">
-                            <label class="font-weight-bold" for="nombre">Nombre</label>
-                            <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Ej. Maria" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="font-weight-bold" for="apellidos">Apellidos</label>
-                            <input class="form-control" type="text" id="apellidos" name="apellidos" placeholder="Ej.Duran Perez" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="font-weight-bold" for="fecha_nac">Fecha Nacimiento</label>
-                            <input class="form-control" type="date" id="fecha_nac" name="fecha_nac"required>
-                        <div class="form-group ">
-                            <label class="form-group" for="genero">Genero</label>
-                                <div class="col-sm-10">
-                                    <div class="form-check-inline">
-                                        <div class="form-check-label form-check-inline">
-                                            <label class="form-check-label" for="masculino">
-                                                <input class="form-check-input" name="genero" id="masculino" value="Masculino" type="radio">Masculino
-                                            </label>
-                                        </div>
-                                        <div class="form-check-label form-check-inline">
-                                            <label class="form-check-label" for="femenino">
-                                                <input class="form-check-input" name="genero" id="femenino" value="Femenino" type="radio">Femenino
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="font-weight-bold" for="email">Email</label>
-                            <input class="form-control" id="email" name="email" type="email" placeholder="Ej. burger@email.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="font-weight-bold" for="Fono">Fono</label>
-                            <input class="form-control" type="text" id="Fono" name="Fono" placeholder="Ej. 9456122378" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="font-weight-bold" for="password">Password</label>
-                            <input class="form-control" id="password" name="password" type="password" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="font-weight-bold" for="password_confirm">Confirmar Password</label>
-                            <input class="form-control" id="password_confirm" name="password_confirm" type="password" required>
-                        </div>
-                        <!-- Textarea -->
-                        <div class="form-group">
-                            <label class="font-weight-bold" for="comentarios">Comentarios: (<label for="info" id="info">Máximo 200 caracteres</label>)</label>
-                            <textarea class="form-control" name="comentarios" id="comentarios" rows="5" onkeypress="return limitarCaracteresComentarios(event, this.value, 200); actualizarCantidadCaracteres(200)" onkeydown="return limitarCaracteresComentarios(event, this.value, 200);" onkeyup=" actualizarCantidadCaracteres(200)"></textarea>
-                        </div>
-                        <!-- Toogle button (Switch) -->
-                        <div class="form-group">
-                            <div class="custom-control custom-switch">
-                                <input class="custom-control-input" id="acepto_terminos" name="acepto_termino" type="checkbox">
-                                <label class="custom-control-label" for="acepto_terminos">Declaro conocer y aceptar los términos del contrato.</label>
-                            </div>
-                        </div>
-                        <!-- botones -->
-                        <div class="form-group">
-                            <input type="submit" class="btn btn-primary"  id="enviar" value="Registrar">
-                            <input type="reset" class="btn btn-secondary" id="reset" value="Limpiar">
-                        </div>
-
-                    </form>
+              <!-- Contact Form and Gmap-->
+      <section class="section section-md section-last bg-default text-md-left">
+        <div class="container">
+            <div class="col-lg-6">
+              <h4 class="text-spacing-50">Contacto</h4>
+              <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                <div class="row row-14 gutters-14">
+                  <div class="col-sm-6">
+                    <div class="form-wrap">
+                      <input class="form-input" id="contact-first-name" type="text" name="name" data-constraints="@Required">
+                      <label class="form-label" for="contact-first-name">Nombre</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-wrap">
+                      <input class="form-input" id="contact-last-name" type="text" name="name" data-constraints="@Required">
+                      <label class="form-label" for="contact-last-name">Apellido</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-wrap">
+                      <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
+                      <label class="form-label" for="contact-email">Email</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-wrap">
+                      <label class="form-label" for="contact-message">Mensaje</label>
+                      <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
+                    </div>
+                  </div>
                 </div>
+                <button class="button button-primary button-pipaluk" type="submit">Enviar</button>
+              </form>
             </div>
-        </main>
+          </div>
+        </div>
+      </section>
 
         <!-- Fin MAIN -->
         

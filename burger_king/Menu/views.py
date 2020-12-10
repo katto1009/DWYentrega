@@ -6,7 +6,6 @@ from django.core.paginator import Paginator,EmptyPage, PageNotAnInteger
 def menu(request):
     projects = Project.objects.all()
 
-
     page = request.GET.get('page',1)
     paginator = Paginator(projects, 3)
 

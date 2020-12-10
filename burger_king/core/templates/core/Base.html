@@ -172,9 +172,15 @@
                       <p class="text-white">Siguenos</p>
                       <div>
                         <ul class="list-inline list-inline-sm footer-social-list-2">
-                          <li><a class="icon fa fa-facebook" href="https://www.facebook.com/BurgerKingChile/"></a></li>
-                          <li><a class="icon fa fa-twitter" href="https://twitter.com/burgerking?lang=es"></a></li>
-                          <li><a class="icon fa fa-instagram" href="https://www.instagram.com/burgerking_chile/?hl=es-la"></a></li>
+                        {% if LINK_FACEBOOK %}
+                            <li><a class="icon fa fa-facebook" href="{{LINK_FACEBOOK}}"></a></li>
+                        {% endif %}
+                        {% if LINK_TWITTER %}
+                            <li><a class="icon fa fa-twitter" href="{{LINK_TWITTER}}"></a></li>
+                        {% endif %}
+                        {% if LINK_INSTAGRAM %}   
+                            <li><a class="icon fa fa-instagram" href="{{LINK_INSTAGRAM}}"></a></li>
+                        {% endif %}
                         </ul>
                       </div>
                     </div>
